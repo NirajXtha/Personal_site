@@ -16,27 +16,64 @@
             background-color: rgb(43, 41, 41);
         }
         header{
-            display: flex;
-            justify-content: space-between;
+            
+            backdrop-filter: blur(25px);
         }
         li{
             list-style: none;
-            padding-inline: 10px;
+            padding-inline: 10px;  
+            display: inline;
         }
         nav{
             display: flex;
+            justify-content: space-between;
             align-items: center;
+        }
+        .background{
+            position: fixed;
+            z-index: -100;
+        }
+        div{
+            text-align: center;
+            
+        }
+        div h1 {
+            overflow: hidden;
+            
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em;
+            animation: 
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+
+        /* The typing effect */
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+
+        /* The typewriter cursor effect */
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: orange; }
         }
     </style>
 </head>
 <body>
+    <img src="5651988.jpg" alt="" class="background">
     <header>
-        <h1>NIRAJ SHRESTHA</h1>
         <nav>
-            <li>About Me</li>
-            <li>Projects</li>
-            <li>Contact me</li>
+            <h1>NIRAJ SHRESTHA</h1>
+            <ul><li>About Me</li>
+                <li>Projects</li>
+                <li>Contact me</li>
+            </ul>
         </nav>
+        <div>
+            <h1>Hi. My Name is Niraj Shrestha</h1>
+        </div>
     </header>
 </body>
 </html>
