@@ -1,0 +1,53 @@
+*{
+    color: aliceblue;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    /* border: 1px solid red; */
+}
+body{
+    background-color: rgb(43, 41, 41);
+    background-image: url(aaabstract.png);       
+}
+header{
+    padding: 15px 70px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+nav h2{
+    font-size: 2rem;
+}
+ul a{
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+ul{
+    word-spacing: 15px;
+}
+header h1{
+    padding-top: 150px;
+    font-size: 3rem;
+}
+button{
+    background-color: coral;
+    padding: 8px 15px;
+    border: 2px solid coral;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+button:hover{
+    background-color: antiquewhite;
+    color: black;
+}
+.side{
+    float: right;
+    width: 55%;
+}
+.name{
+    color: coral;
+}

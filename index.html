@@ -4,76 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal BlogSite</title>
-    <style>
-        *{
-            color: aliceblue;
-            margin: 0;
-            padding: 0;
-            font-family: cursive;
-            /* border: 1px solid red; */
-        }
-        body{
-            background-color: rgb(43, 41, 41);
-        }
-        header{
-            
-            backdrop-filter: blur(25px);
-        }
-        li{
-            list-style: none;
-            padding-inline: 10px;  
-            display: inline;
-        }
-        nav{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .background{
-            position: fixed;
-            z-index: -100;
-        }
-        div{
-            text-align: center;
-            
-        }
-        div h1 {
-            overflow: hidden;
-            
-            white-space: nowrap;
-            margin: 0 auto;
-            letter-spacing: .15em;
-            animation: 
-                typing 3.5s steps(40, end),
-                blink-caret .75s step-end infinite;
-        }
-
-        /* The typing effect */
-        @keyframes typing {
-            from { width: 0 }
-            to { width: 100% }
-        }
-
-        /* The typewriter cursor effect */
-        @keyframes blink-caret {
-            from, to { border-color: transparent }
-            50% { border-color: orange; }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="website icon" href="profilePic.jpg">
 </head>
 <body>
-    <img src="5651988.jpg" alt="" class="background">
     <header>
         <nav>
-            <h1>NIRAJ SHRESTHA</h1>
-            <ul><li>About Me</li>
-                <li>Projects</li>
-                <li>Contact me</li>
+            <h2>Niraj</h2>
+            <ul>
+                <a href="#">Home</a>
+                <a href="#">Skills</a>
+                <a href="#">Projects</a>
+                <a href="#">Socials</a>
+                <button>Contact Me</button>
             </ul>
         </nav>
-        <div>
-            <h1>Hi. My Name is Niraj Shrestha</h1>
-        </div>
+        
+        <span class="side">
+            <h1>HI! I AM <br>
+            <span class="name">NIRAJ SHRESTHA</span></h1>
+            <p>I'm a dedicated full-stack developer with a passion for crafting innovative solutions. Eager to learn and grow in the ever-evolving tech landscape, I thrive on pushing the boundaries of my skills and contributing to the vibrant developer community.</p><br>
+            <button>Hire Me</button>
+        </span>
+        <img src="profilePic-removebg-preview.png" alt="">
+        
     </header>
 </body>
 </html>
