@@ -27,7 +27,49 @@
             <button>Hire Me</button>
         </span>
         <img src="profilePic-removebg-preview.png" alt="">
-        
     </header>
+
+    <div class="main reveal">
+        <aside class="skill-side">
+            <h1>My <span class="name">Skills</span></h1>
+        </aside>
+        <img src="LANGUAGE.png" alt="" class="img-skill" width="370">
+        <div class="skills">
+            <div class="ball one"><h2>PHP</h2></div>
+            <div class="ball two"><h2>HTML</h2></div>
+            <div class="ball three"><h2>CSS</h2></div>
+            <div class="ball four"><h2>JS</h2></div>
+            <div class="ball five"><h2>SQL</h2></div>
+            <div class="ball six"><h2>Java</h2></div>
+            <div class="ball seven"><h2>C</h2></div>
+            <div class="ball eight"><h2>Laravel</h2></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>My <span class="name">Projects</span></h1>
+    </div>
+
+
+    <script>
+        function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+
+        for (var i = 0; i < reveals.length; i++) {
+            var windowHeight = window.innerHeight;
+            var elementTop = reveals[i].getBoundingClientRect().top;
+            var elementVisible = 150;
+
+            if (elementTop < windowHeight - elementVisible) {
+                reveals[i].classList.add("active");
+            } else {
+                reveals[i].classList.remove("active");
+            }
+        }
+        }
+
+        window.addEventListener("scroll", reveal);
+
+    </script>
 </body>
 </html>

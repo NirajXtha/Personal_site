@@ -4,19 +4,25 @@
     padding: 0;
     font-family: 'Times New Roman', Times, serif;
     /* border: 1px solid red; */
+    transition: .4s all ease;
 }
 body{
     background-color: rgb(43, 41, 41);
-    background-image: url(aaabstract.png);       
+    background-image: url(aaabstract.png);
+    background-repeat: no-repeat;   
+    background-size: cover; 
 }
-header{
+header, .main, .container{
     padding: 15px 70px;
+    height: 100dvh;
+    
 }
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 0;
+    margin-bottom: 30px;
 }
 nav h2{
     font-size: 2rem;
@@ -28,9 +34,11 @@ ul a{
 ul{
     word-spacing: 15px;
 }
+h1{
+    font-size: 3rem;
+}
 header h1{
     padding-top: 150px;
-    font-size: 3rem;
 }
 button{
     background-color: coral;
@@ -50,4 +58,122 @@ button:hover{
 }
 .name{
     color: coral;
+}
+.ball{
+    width: 90px;
+    height: 60px;
+    padding-top: 30px;
+    border-radius: 50%;
+    border: 1px solid coral;
+    text-align: center;
+    position: relative;
+    background-color: coral;
+}
+
+.skills{
+    height: 100dvh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.skill-side{
+    transform: translateX(-250px);
+}
+.img-skill{
+    transform: translate(200px,10px);
+}
+/* For animation of skills */
+.active .one{
+    animation: slide1 1.5s both;z-index: 10;
+}
+.active .two{
+    animation: slide2 1.5s both;z-index: 9;
+    
+}
+.active .three{
+    animation: slide3 1.5s both;z-index: 8;
+    
+}
+.active .four{
+    animation: slide4 1.5s both;z-index: 7;
+    
+}
+.active .five{
+    animation: slide5 1.5s both;z-index: 6;
+    
+}
+.active .six{
+    animation: slide6 1.5s both;z-index: 5;
+    
+}
+.active .seven{
+    animation: slide7 1.5s both;z-index: 4;
+    
+}
+.active .eight{
+    animation: slide8 1.5s both;z-index: 3;
+    
+}
+.one{transform: translate(-50px,100px);}
+.two{transform: translate(-200px,100px);}
+.three{transform: translate(100px,0);}
+.four{transform: translate(-300px,50px);}
+.five{transform: translate(200px,-50px);}
+.six{transform: translate(-200px,0);}
+.seven{transform: translate(100px,-70px);}
+.eight{transform: translate(-50px,-70px);}
+/*Animations slides*/
+@keyframes slide1{
+    0%{
+        transform: translate(0,300px); 
+    }
+}
+@keyframes slide2{
+    10%{
+        transform: translate(0,210px);
+    }
+    
+}
+@keyframes slide3{
+    20%{
+        transform: translate(0,120px); 
+    }
+}
+@keyframes slide4{
+    30%{
+        transform: translate(0,30px); 
+    }
+}
+@keyframes slide5{
+    40%{
+        transform: translate(0,-60px); 
+    }
+}
+@keyframes slide6{
+    50%{
+        transform: translate(0,-150px); 
+    }
+}
+@keyframes slide7{
+    60%{
+        transform: translate(0,-245px);
+    }
+}
+@keyframes slide8{
+    70%{
+        transform: translate(0,-340px);
+    }
+}
+/*End of animation slides*/
+
+.container{
+    text-align: center;
 }
