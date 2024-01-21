@@ -3,73 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal BlogSite</title>
+    <title>Portfolio | Niraj Shrestha</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="website icon" href="profilePic.jpg">
 </head>
 <body>
+    <nav class="nav">
+        <h1>NIRAJ</h1>
+        <div class="menu" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        <ul>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#">Contact Me</a></li>
+        </ul>
+    </nav>
+
     <header>
-        <nav>
-            <h2>Niraj</h2>
-            <ul>
-                <a href="#">Home</a>
-                <a href="#">Skills</a>
-                <a href="#">Projects</a>
-                <a href="#">Socials</a>
-                <button>Contact Me</button>
-            </ul>
-        </nav>
-        
-        <span class="side">
-            <h1>HI! I AM <br>
-            <span class="name">NIRAJ SHRESTHA</span></h1>
-            <p>I'm a dedicated full-stack developer with a passion for crafting innovative solutions. Eager to learn and grow in the ever-evolving tech landscape, I thrive on pushing the boundaries of my skills and contributing to the vibrant developer community.</p><br>
-            <button>Hire Me</button>
-        </span>
-        <img src="profilePic-removebg-preview.png" alt="">
+        <img src="profilePic.png" alt="Profile Picture" title="Niraj Shrestha | Profile Picture" class="profile_pic">
+        <div class="about-heading">
+            <h1>HI! I AM</h1>
+            <h1><span class="color-heading">NIRAJ SHRESTHA</span></h1><br>
+            <p>I'm a dedicated full-stack developer with a passion for crafting innovative solutions. Eager to learn and grow in the ever-evolving tech landscape, I thrive on pushing the boundaries of my skills and contributing to the vibrant developer community.</p>
+        </div>
     </header>
 
-    <div class="main reveal">
-        <aside class="skill-side">
-            <h1>My <span class="name">Skills</span></h1>
-        </aside>
-        <img src="LANGUAGE.png" alt="" class="img-skill" width="370">
-        <div class="skills">
-            <div class="ball one"><h2>PHP</h2></div>
-            <div class="ball two"><h2>HTML</h2></div>
-            <div class="ball three"><h2>CSS</h2></div>
-            <div class="ball four"><h2>JS</h2></div>
-            <div class="ball five"><h2>SQL</h2></div>
-            <div class="ball six"><h2>Java</h2></div>
-            <div class="ball seven"><h2>C</h2></div>
-            <div class="ball eight"><h2>Laravel</h2></div>
+    <div id="skills">
+        
+        <h1>MY <span class="color-heading">SKILLS</span></h1>
+        <div></div>
+        <div class="skill-set">
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">JAVASCRIPT</span>
+            <span class="skill">PHP</span>
+            <span class="skill">LARAVEL</span>
+            <span class="skill">JAVA</span>
+            <span class="skill">BOOTSTRAP</span>
+            <span class="skill">MySQL</span>
+            <span class="skill">TAILWIND CSS</span>
+            <span class="skill">C</span>
+            <span class="skill">C#</span>
+            <span class="skill">REACT JS</span>
+            <span class="skill">DOTNET</span>
+            <span class="skill">PHOTOSHOP</span>
+            <span class="skill">FIGMA</span>
         </div>
     </div>
 
-    <div class="container">
-        <h1>My <span class="name">Projects</span></h1>
+    <div id="projects">
+        <h1>MY <span class="color-heading">PROJECTS</span></h1>
+
+        <div class="card">
+            <img src="music-ss1.png" alt="Project ScreenShot">
+
+                <h1>MUSICAL INSTRUMENT PORTAL</h1>
+                <p>This project is an e-commerce project for browsing, purchasing and renting musical instruments. It is developed without the use of any frameworks or API.</p>
+                <p>Language used: <br>
+                    <span class="language">HTML CSS JAVASCRIPT PHP MySQL</span></p>
+                <button onclick="location.href = 'www.youtube.com';" class="button">PROJECT LINK</button>
+
+        </div>
+        
     </div>
 
+    <footer>
+        <h1 class="contacts"><span class="color-heading">CONTACT</span> ME</h1>
+        <div class="details">
+            <span class="list">Email:</span>
+            <span class="list">shresthaniraj633@gmail.com nishrestha776@gmail.com
+            </span>
+            <span class="list">LinkedIn:</span>
+            <span class="list">linkedin.com/in/NirajXtha</span>
+            <span class="list">Github:</span>
+            <span class="list">NirajXtha</span>
+            <span class="list">Phone:</span>
+            <span class="list">+977 9841902307</span>
+        </div>
+    </footer>
 
-    <script>
-        function reveal() {
-        var reveals = document.querySelectorAll(".reveal");
-
-        for (var i = 0; i < reveals.length; i++) {
-            var windowHeight = window.innerHeight;
-            var elementTop = reveals[i].getBoundingClientRect().top;
-            var elementVisible = 150;
-
-            if (elementTop < windowHeight - elementVisible) {
-                reveals[i].classList.add("active");
-            } else {
-                reveals[i].classList.remove("active");
-            }
-        }
-        }
-
-        window.addEventListener("scroll", reveal);
-
-    </script>
+    <script src="main.js"></script>
 </body>
 </html>
