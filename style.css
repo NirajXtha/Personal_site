@@ -1,7 +1,7 @@
 :root{
     --light-blue: #A2B2EE;
     --dark-blue: #5F7ADB;
-    --transparent-grey: #363636;
+    --transparent-grey: #252525;
     --brown: #b54e00;
 }
 *{
@@ -78,13 +78,13 @@ a {
     transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
   }
   
-  a:hover:before {
+  a:not(.noEffect):hover:before {
     background: #fff;
     width: 100%;
     transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
   }
   
-  a:hover:after {
+  a:not(.noEffect):hover:after  {
     background: transparent;
     width: 100%;
     transition: 0s;
