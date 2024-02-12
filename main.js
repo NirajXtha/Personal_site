@@ -12,4 +12,7 @@ navObserver.observe(watch);
 
 function myFunction(x) {
     x.classList.toggle("change");
+    const menuList = document.querySelector(".ul");
+    
+    menuList.classList.toggle('menulist');
   }

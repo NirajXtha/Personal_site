@@ -19,12 +19,12 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    backdrop-filter: blur(2px);
-    
+    backdrop-filter: blur(5px);
+    padding: 1rem 0;
 }
 
 nav, footer{
-  margin: 1rem 9rem;
+  margin: 0rem 9rem;
 }
 
 
@@ -41,7 +41,7 @@ nav{
     border-radius: 15px;
 }
 .nav.sticking{
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(0, 166, 196);
 }
 ul{
     list-style: none;
@@ -92,29 +92,30 @@ a {
 
   /* Hover effect end */
 
-.profile_pic{
-    filter: drop-shadow(1.4rem 0 1rem #000000);
-}
-
-.color-heading{
+  .color-heading{
     color: #7ac6ff;
-}
-
-header{
+  }
+  
+  header{
     display: flex;
     align-items: center;
-    padding: 1rem 9rem;
-}
+    justify-content: center;
+    padding: 1rem clamp(1rem, 10%, 9rem);
+  }
+  
+  .profile_pic{
+      filter: drop-shadow(1.4rem 0 1rem #000000);
+  }
 
 .about-heading{
-    padding: 0 5% 0 25%;
+    padding: 0  clamp(0px, 5%, 10px) 0  clamp(0px, 25%, 500px);
 }
 
 #skills{
   padding: 2rem 9rem;
     display: grid;
     place-items: center;
-    grid-template-columns: 20% 35% 45%;
+    grid-template-columns: 20% clamp(0%, 35%, 35%) 45%;
 }
 
 .skill-set{
@@ -130,13 +131,14 @@ header{
     color: #000000;
     font-weight: 600;
 }
+
 #projects{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 1rem 2rem;
-    gap: 2rem;
+    gap: clamp(1rem, 5%, 2rem);
 }
 
 .card{
@@ -150,12 +152,16 @@ header{
     gap: 2rem;
 }
 
+.card h1{
+  text-align: center;
+}
+
 .card img{
     width: 100%;
 }
 
 .card p{
-    width: 75%;
+    padding: 0 ;
 }
 
 .language{
@@ -248,11 +254,11 @@ footer{
 }
 .details{
     display: grid;
+    font-weight: 600;
     grid-template-columns: 25% 1fr;
 }
 
-.menu {
-  display: inline-block;
+.menu{
   display: none;
   cursor: pointer;
 }
@@ -273,4 +279,71 @@ footer{
 
 .change .bar3 {
   transform: translate(0, -11px) rotate(45deg);
+}
+
+/* media query */
+@media (max-width: 800px) {
+  body{
+    padding: 0;
+    backdrop-filter: blur(10px);
+    font-weight: 600;
+  }
+  nav, footer{
+    margin: 0;
+    border-radius: 0;
+  }
+  .menu{
+    display: inline-block;
+  }
+  .ul{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 80px;
+  }
+  .menulist{
+    display: grid;
+    gap: 1.5rem;    
+    min-width: 40vw;
+    padding: 20px;
+    background-color: #7ac6ff;
+  }
+  header{
+    padding: 1rem clamp(1rem, 5%, 9rem);
+  }
+  .about-heading{
+    padding: 0  clamp(0px, 5%, 10px) 0  clamp(0px, 7%, 15%);
+  }
+  #skills{
+    grid-template-columns: none;
+    grid-template-rows: auto 20px auto;
+    padding: clamp(0px, 1rem, 2rem) clamp(30px, 5vw, 5vw);
+  }
+  #projects{
+    padding: 2%;
+  }
+  .card{
+    padding: clamp(10px, 5%, 10%);
+  }
+  *{
+    /* outline: 1px solid red; */
+  }
+}
+
+@media (max-width: 550px){
+  
+  *{
+    /* outline: 1px solid red; */
+  }
+  header{
+    flex-wrap: wrap;
+    padding: 0 0 5vw 0;
+  }
+  .about-heading{
+    padding: 0px clamp(0px, 5%, 5vw);
+  }
+  .card{
+    width: 90%;
+  }
+
 }
