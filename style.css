@@ -325,16 +325,10 @@ footer{
   .card{
     padding: clamp(10px, 5%, 10%);
   }
-  *{
-    /* outline: 1px solid red; */
-  }
 }
 
 @media (max-width: 550px){
   
-  *{
-    /* outline: 1px solid red; */
-  }
   header{
     flex-wrap: wrap;
     padding: 0 0 5vw 0;
