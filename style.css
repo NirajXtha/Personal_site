@@ -1,7 +1,7 @@
 :root{
     --light-blue: #A2B2EE;
     --dark-blue: #5F7ADB;
-    --transparent-grey: #252525;
+    --transparent-grey: #232524;
     --brown: #b54e00;
 }
 *{
@@ -11,6 +11,7 @@
     padding: 0;
     border-color: transparent;
     text-align: justify;
+    box-sizing: border-box;
     /* outline: 1px solid red; */
 }
 body{
@@ -41,7 +42,7 @@ nav{
     border-radius: 15px;
 }
 .nav.sticking{
-    background-color: rgb(0, 166, 196);
+    background-color: #34D1BF;
 }
 ul{
     list-style: none;
@@ -93,7 +94,7 @@ a {
   /* Hover effect end */
 
   .color-heading{
-    color: #7ac6ff;
+    color: #34D1BF;
   }
   
   header{
@@ -306,7 +307,7 @@ footer{
     gap: 1.5rem;    
     min-width: 40vw;
     padding: 20px;
-    background-color: #7ac6ff;
+    background-color: #34D1BF;
   }
   header{
     padding: 1rem clamp(1rem, 5%, 9rem);
@@ -337,7 +338,13 @@ footer{
     padding: 0px clamp(0px, 5%, 5vw);
   }
   .card{
-    width: 90%;
+    width: 97%;
   }
+  
 
+}
+@media (max-width: 360px){
+  footer{
+    padding-inline: 0px;
+  }
 }
