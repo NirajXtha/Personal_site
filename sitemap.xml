@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://www.nirajshrestha07.com.np</loc>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://www.nirajshrestha07.com.np/#home</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.nirajshrestha07.com.np/#about</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.nirajshrestha07.com.np/#skills</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.nirajshrestha07.com.np/#projects</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.nirajshrestha07.com.np/#contact</loc>
+        <priority>0.8</priority>
+    </url>
+</urlset>

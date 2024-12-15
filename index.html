@@ -7,7 +7,7 @@
     <!-- Primary Meta Tags -->
     <title>Niraj Shrestha - Full Stack Developer Portfolio</title>
     <meta name="title" content="Niraj Shrestha - Full Stack Developer Portfolio">
-    <meta name="description" content="Full Stack Developer specializing in PHP, JavaScript, React, and more. View my projects and skills in web development, mobile applications, and database management.">
+    <meta name="description" content="Full Stack Developer with diverse expertise. View my projects and skills in web development, mobile applications, and database management.">
     <meta name="keywords" content="niraj, Niraj, niraj shrestha, Niraj shrestha,nirajxtha, NirajXtha, full stack developer, web developer, PHP developer, JavaScript developer, React developer, portfolio, Niraj Shrestha">
     <meta name="author" content="Niraj Shrestha">
     <meta name="robots" content="index, follow">
@@ -16,24 +16,35 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://nirajxtha.github.io/">
     <meta property="og:title" content="Niraj Shrestha - Full Stack Developer Portfolio">
-    <meta property="og:description" content="Full Stack Developer specializing in PHP, JavaScript, React, and more. View my projects and skills in web development, mobile applications, and database management.">
+    <meta property="og:description" content="Full Stack Developer with diverse expertise. View my projects and skills in web development, mobile applications, and database management.">
     <meta property="og:image" content="profile.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://nirajxtha.github.io/">
     <meta property="twitter:title" content="Niraj Shrestha - Full Stack Developer Portfolio">
-    <meta property="twitter:description" content="Full Stack Developer specializing in PHP, JavaScript, React, and more. View my projects and skills in web development, mobile applications, and database management.">
+    <meta property="twitter:description" content="Full Stack Developer with diverse expertise. View my projects and skills in web development, mobile applications, and database management.">
     <meta property="twitter:image" content="profile.jpg">
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="manifest" href="./favicon/site.webmanifest">
     <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+
+    <!-- Preload Critical Resources -->
+    <!-- Preloading Tailwind CSS -->
+    <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+    <!-- Preloading Font Awesome -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style">
+    <!-- Preloading Styles -->
+    <link rel="preload" href="styles.css" as="style">
+    <!-- Preloading Hero Image -->
+    <link rel="preload" href="profile.jpg" as="image">
+    <link rel="preload" href="https://images.unsplash.com/photo-1516116216624-53e697fedbea?ixlib=rb-4.0.0&auto=format&fit=crop&w=1920&q=80" as="image">
 
     <!-- Existing CSS and Scripts -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -76,7 +87,7 @@
         <div class="container mx-auto px-4">
             <div class="text-center">
                 <div class="mb-8">
-                    <img src="profile.jpg" alt="Profile Picture" class="w-48 h-48 rounded-full mx-auto border-4 border-white shadow-xl object-cover">
+                    <img src="profile.jpg" alt="Profile Picture" class="w-48 h-48 rounded-full mx-auto border-4 border-white shadow-xl object-cover" loading="lazy">
                 </div>
                 <h1 class="text-5xl font-bold text-white mb-4">Full Stack Developer</h1>
                 <p class="text-xl text-gray-200 mb-8">Turning ideas into reality through code</p>
@@ -186,7 +197,7 @@
                 <!-- Chess Project -->
                 <div class="project-card group flex flex-col h-full">
                     <div class="relative overflow-hidden">
-                        <img src="chess.png" alt="Chess Project" class="w-full h-48 object-cover rounded-t transition-transform duration-300 group-hover:scale-110">
+                        <img src="chess.png" alt="Chess Project" class="w-full h-48 object-cover rounded-t transition-transform duration-300 group-hover:scale-110" loading="lazy">
                         <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex items-center justify-center">
                             <a href="https://github.com/NirajXtha/chess" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700">View Project</a>
                         </div>
@@ -207,7 +218,7 @@
                 <!-- Musical Instrument Portal -->
                 <div class="project-card group flex flex-col h-full">
                     <div class="relative overflow-hidden">
-                        <img src="muse.png" alt="Musical Instrument Portal" class="w-full h-48 object-cover rounded-t transition-transform duration-300 group-hover:scale-110">
+                        <img src="muse.png" alt="Musical Instrument Portal" class="w-full h-48 object-cover rounded-t transition-transform duration-300 group-hover:scale-110" loading="lazy">
                         <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex items-center justify-center">
                             <a href="https://github.com/NirajXtha/Musical_Instrument_Portal_Project" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700">View Project</a>
                         </div>
@@ -228,7 +239,7 @@
                 <!-- ORB Food Project -->
                 <div class="project-card group flex flex-col h-full">
                     <div class="relative overflow-hidden">
-                        <img src="orbfood.png" alt="ORB Food Project" class="w-full h-48 object-cover rounded-t transition-transform duration-300 group-hover:scale-110">
+                        <img src="orbfood.png" alt="ORB Food Project" class="w-full h-48 object-cover rounded-t transition-transform duration-300 group-hover:scale-110" loading="lazy">
                         <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex items-center justify-center">
                             <a href="https://github.com/NirajXtha/Orb_Food" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700">View Project</a>
                         </div>
@@ -249,7 +260,7 @@
                 <!-- Hangman Game Project -->
                 <div class="project-card group flex flex-col h-full">
                     <div class="relative overflow-hidden">
-                        <img src="hangman.png" alt="Hangman Game Project" class="w-full h-48 object-cover rounded-t transition-transform duration-300 group-hover:scale-110">
+                        <img src="hangman.png" alt="Hangman Game Project" class="w-full h-48 object-cover rounded-t transition-transform duration-300 group-hover:scale-110" loading="lazy">
                         <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex items-center justify-center">
                             <a href="https://github.com/NirajXtha/Hangman" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700">View Project</a>
                         </div>
@@ -269,7 +280,7 @@
                 <!-- E-Finance Project -->
                 <div class="project-card group flex flex-col h-full">
                     <div class="relative overflow-hidden">
-                        <img src="finance.png" alt="E-Finance Project" class="w-full h-48 object-cover rounded-t transition-transform duration-300 group-hover:scale-110">
+                        <img src="finance.png" alt="E-Finance Project" class="w-full h-48 object-cover rounded-t transition-transform duration-300 group-hover:scale-110" loading="lazy">
                         <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex items-center justify-center">
                             <a href="https://github.com/NirajXtha/Finance" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700">View Project</a>
                         </div>
@@ -290,7 +301,7 @@
                 <!-- E-Pharm Project -->
                 <div class="project-card group flex flex-col h-full">
                     <div class="relative overflow-hidden">
-                        <img src="pharmacy.png" alt="E-Pharm Project" class="w-full h-48 object-cover rounded-t transition-transform duration-300 group-hover:scale-110">
+                        <img src="pharmacy.png" alt="E-Pharm Project" class="w-full h-48 object-cover rounded-t transition-transform duration-300 group-hover:scale-110" loading="lazy">
                         <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex items-center justify-center">
                             <a href="https://github.com/NirajXtha/Project" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700">View Project</a>
                         </div>
@@ -327,9 +338,10 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-4">
+    <footer class="bg-gray-800 text-gray-300 py-8">
         <div class="container mx-auto px-4 text-center">
-            <div class="flex justify-center space-x-8">
+            <p class="mb-4">Connect with me:</p>
+            <div class="flex justify-center space-x-4 mb-6">
                 <a href="https://github.com/NirajXtha" target="_blank" class="hover:text-gray-400 transition-colors">
                     <i class="fab fa-github text-xl"></i>
                 </a>
@@ -343,10 +355,10 @@
                     <i class="fab fa-youtube text-xl"></i>
                 </a>
             </div>
+            <p class="text-sm">&copy; 2024 Niraj Shrestha. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- Add this before closing body tag -->
     <script src="script.js"></script>
 </body>
 </html> 

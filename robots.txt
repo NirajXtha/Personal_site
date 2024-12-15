@@ -1,0 +1,21 @@
+# robots.txt for https://www.nirajshrestha07.com.np/
+
+# Allow all search engines to crawl the site
+User-agent: *
+
+# Block unnecessary files
+Disallow: /cgi-bin/
+Disallow: /tmp/
+
+# Allow access to CSS, JS, and image files
+Allow: *.css
+Allow: *.js
+Allow: *.jpg
+Allow: *.jpeg
+Allow: *.png
+Allow: *.gif
+Allow: *.webp
+Allow: *.svg
+
+# Sitemap location
+Sitemap: https://www.nirajshrestha07.com.np/sitemap.xml

@@ -1,11 +1,4 @@
-/* Custom styles */
-.skill-card {
-    @apply bg-white/90 backdrop-blur-sm p-6 rounded-lg shadow-md text-center transition-all duration-300;
-}
 
-.project-card {
-    @apply bg-white/90 backdrop-blur-sm rounded-lg shadow-md overflow-hidden transition-all duration-300;
-}
 
 /* Smooth scroll behavior */
 html {
@@ -53,13 +46,3 @@ section > .container {
     position: relative;
     z-index: 1;
 }
-
-/* Skill card hover effect */
-.skill-card:hover {
-    @apply shadow-xl transform -translate-y-1;
-}
-
-/* Project card hover effect */
-.project-card:hover {
-    @apply shadow-xl transform -translate-y-1;
-} 
